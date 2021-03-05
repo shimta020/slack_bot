@@ -13,7 +13,7 @@ module Clockwork
     icon_emoji: ":shipit:",
     link_names: 1
   )
-  every(5.seconds, 'notify') do
+  every(3.minutes, 'notify') do
     client.notify("Hello There!")
   end
 end
